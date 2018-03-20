@@ -19,7 +19,7 @@ import java.io.File;
 @EnableWebMvc
 @Configuration
 @ComponentScan
-public interface RunWebAppAsJar {
+public interface RunWebAppAsJarOnTomcat {
 
     String CONTEXT_PATH = "/app";
     String BASE_DIR = new File("").getAbsolutePath();
@@ -32,9 +32,7 @@ public interface RunWebAppAsJar {
     static void main(String[] args) throws Exception {
 
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-
-        context.register(RunWebAppAsJar.class);
-
+        context.register(RunWebAppAsJarOnTomcat.class);
 
         Tomcat tomcat = new Tomcat();
         tomcat.setPort(SERVER_PORT);
