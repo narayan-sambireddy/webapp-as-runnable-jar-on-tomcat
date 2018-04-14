@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * A sample controller for demo
  *
- * @author narayana
+ * @author narayan-sambireddy
  */
 @RestController
 public class AppController {
 
-    @GetMapping("/hello")
+    @GetMapping
     public String hello() {
         return "Hello from App";
     }

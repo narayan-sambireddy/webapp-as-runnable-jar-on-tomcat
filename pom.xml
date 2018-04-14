@@ -1,20 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>narayan.experiments</groupId>
   <artifactId>webapp-as-runnable-jar-on-tomcat</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>webapp-as-runnable-jar-on-tomcat Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-
   <properties>
     <compiler.version>3.7.0</compiler.version>
-    <java.version>1.8</java.version>
+    <java.version>1.9</java.version>
     <spring.boot.version>2.0.0.RELEASE</spring.boot.version>
     <tomcat.version>8.5.0</tomcat.version>
-    <servlet.version>3.0.1</servlet.version>
-    <spring.version>5.0.4.RELEASE</spring.version>
+    <servlet.version>3.1.0</servlet.version>
+    <spring.version>5.0.5.RELEASE</spring.version>
   </properties>
 
 
@@ -56,7 +54,9 @@
     </dependency>
 
   </dependencies>
+
   <build>
+
     <finalName>webapp-as-runnable-jar-on-tomcat</finalName>
 
     <plugins>
@@ -90,4 +90,5 @@
     </plugins>
 
   </build>
+
 </project>
